@@ -17,7 +17,7 @@ find_package(xacro REQUIRED)
 
 
 install(
-  DIRECTORY launch urdf rviz worlds config meshes
+  DIRECTORY launch urdf rviz worlds config meshes model
   DESTINATION share/${PROJECT_NAME}
 )
 
