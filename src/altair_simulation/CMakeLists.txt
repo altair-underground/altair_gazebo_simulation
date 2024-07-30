@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(op3_description)
+project(altair_simulation)
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
