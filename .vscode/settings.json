@@ -6,5 +6,6 @@
         "/opt/ros/jazzy/lib/python3.12/site-packages"
     ],
     "cmake.configureOnOpen": false,
-    "ros.distro": "jazzy"
+    "ros.distro": "jazzy",
+    "python.analysis.typeCheckingMode": "basic"
 }

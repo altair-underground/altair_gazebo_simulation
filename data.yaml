@@ -1,0 +1,30 @@
+- direction: GZ_TO_ROS
+  gz_topic_name: clock
+  gz_type_name: gz.msgs.Clock
+  ros_topic_name: clock
+  ros_type_name: rosgraph_msgs/msg/Clock
+- direction: GZ_TO_ROS
+  gz_topic_name: gazebo/joint_states
+  gz_type_name: gz.msgs.Model
+  ros_topic_name: joint_states
+  ros_type_name: sensor_msgs/msg/JointState
+- direction: GZ_TO_ROS
+  gz_topic_name: gazebo/imu
+  gz_type_name: gz.msgs.IMU
+  ros_topic_name: gazebo/imu
+  ros_type_name: sensor_msgs/msg/Imu
+- direction: GZ_TO_ROS
+  gz_topic_name: gazebo/camera/camera_info
+  gz_type_name: gz.msgs.CameraInfo
+  ros_topic_name: gazebo/camera/camera_info
+  ros_type_name: sensor_msgs/msg/CameraInfo
+- direction: ROS_TO_GZ
+  gz_topic_name: joint_state/command
+  gz_type_name: gz.msgs.Model
+  ros_topic_name: gazebo/joint_states
+  ros_type_name: sensor_msgs/msg/JointState
+- - direction: ROS_TO_GZ
+    gz_topic_name: model/robotis_op3/joint/head_tilt/0/cmd_pos
+    gz_type_name: gz.msgs.Model
+    ros_topic_name: robot1, robot2, robot3/gazebo/joint_states/head_tilt
+    ros_type_name: sensor_msgs/msg/JointState
